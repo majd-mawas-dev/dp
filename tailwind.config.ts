@@ -8,11 +8,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#080808",
-        gold: "#C6A15B",
-        ivory: "#F5F1E8",
-        muted: "#999999",
-        panel: "#101010",
+        ink: "#050505",
+        gold: "#FF6A00",
+        ivory: "#F2F2F2",
+        muted: "#9A9A9A",
+        panel: "#111111",
       },
       fontFamily: {
         sans: ["Manrope", "Inter", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
@@ -21,7 +21,7 @@ const config: Config = {
         editorial: "0.14em",
       },
       boxShadow: {
-        "gold-line": "0 0 0 1px rgba(198, 161, 91, 0.35)",
+        "gold-line": "0 0 0 1px rgba(255, 106, 0, 0.36)",
         "soft-black": "0 30px 80px rgba(0, 0, 0, 0.55)",
       },
       backgroundImage: {
