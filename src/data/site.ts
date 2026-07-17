@@ -18,9 +18,9 @@ import {
 export type ProductKey = "activator" | "motor" | "locator" | "ultrasonic";
 
 export const brand = {
-  name: "AUREN Dental Technologies",
-  shortName: "AUREN",
-  descriptor: "European Endodontic Technology",
+  name: "db",
+  shortName: "db",
+  descriptor: "Endodontic Technology",
   email: "hello@placeholder.example",
   phone: "+00 000 000 000",
   address: "[Editable European office address]",
@@ -32,7 +32,7 @@ export const products = [
     key: "activator" as ProductKey,
     category: "Irrigant Activation",
     name: "Endo Activator",
-    shortName: "AUREN Activa One",
+    shortName: "db Activa One",
     description:
       "Designed to support effective irrigant activation through a controlled and ergonomic workflow.",
     overview: "Controlled activation in a balanced, lightweight handpiece.",
@@ -48,7 +48,7 @@ export const products = [
     key: "motor" as ProductKey,
     category: "Canal Preparation",
     name: "Endo Motor",
-    shortName: "AUREN Motive X",
+    shortName: "db Motive X",
     description:
       "A compact preparation platform created for precise settings, clear feedback, and an organized chairside workflow.",
     overview: "Intuitive preparation controls with an architectural console.",
@@ -64,7 +64,7 @@ export const products = [
     key: "locator" as ProductKey,
     category: "Working Length",
     name: "Apex Locator",
-    shortName: "AUREN Locate S",
+    shortName: "db Locate S",
     description:
       "A clear, focused locator interface designed to support confident working-length assessment and efficient setup.",
     overview: "Focused visual guidance with a calm, distraction-free display.",
@@ -80,7 +80,7 @@ export const products = [
     key: "ultrasonic" as ProductKey,
     category: "Ultrasonic Irrigation",
     name: "Ultrasonic Irrigation System",
-    shortName: "AUREN Sono Flow",
+    shortName: "db Sono Flow",
     description:
       "A refined ultrasonic platform developed to integrate controlled irrigation support into modern endodontic protocols.",
     overview: "A coordinated ultrasonic system with precise chairside control.",

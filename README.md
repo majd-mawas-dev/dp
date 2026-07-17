@@ -1,4 +1,4 @@
-# AUREN Dental Technologies — React Landing Page
+# db — React Landing Page
 
 A standalone React + TypeScript landing page built with Vite, Tailwind CSS, and Lucide icons. It contains no Next.js dependency or framework-specific routing.
 

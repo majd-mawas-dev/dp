@@ -63,7 +63,7 @@ export default function HomePage() {
             />
             <div className="hero-product-caption">
               <span>01 / 04</span>
-              <p>AUREN Activa One</p>
+              <p>db Activa One</p>
             </div>
           </Reveal>
         </div>
@@ -356,10 +356,10 @@ export default function HomePage() {
         <div className="container-wide footer-grid">
           <div className="footer-brand">
             <div className="wordmark footer-wordmark">
-              <span>A</span><div><b>{brand.shortName}</b><small>DENTAL TECHNOLOGIES</small></div>
+              <span>d</span><div><b>{brand.shortName}</b><small>DENTAL TECHNOLOGIES</small></div>
             </div>
             <p>
-              Premium placeholder website concept for a European endodontic technology brand.
+              Premium placeholder website concept for an endodontic technology brand.
             </p>
             <div className="socials">
               <a href="#" aria-label="LinkedIn"><Linkedin size={18} /></a>
