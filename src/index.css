@@ -100,7 +100,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 @keyframes scrollPulse { 50% { transform: translateY(5px); } }
 
 .product-stage { --rx: 0deg; --ry: 0deg; --px: 0px; --py: 0px; position: relative; isolation: isolate; min-height: 620px; display: grid; place-items: center; perspective: 1200px; overflow: hidden; background: radial-gradient(circle at 50% 38%, rgba(255,106,0,.14), transparent 38%), linear-gradient(145deg, rgba(19,22,29,.86), rgba(5,5,5,.78)); }
-.product-stage::before { content: ""; position: absolute; inset: 0; z-index: -1; background: url("./assets/dp.png") center / cover no-repeat; opacity: .12; filter: saturate(.72) contrast(1.18); transform: scale(1.04); }
+.product-stage::before { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(circle at 22% 20%, rgba(255,255,255,.08), transparent 18%), radial-gradient(circle at 78% 28%, rgba(255,106,0,.16), transparent 24%), linear-gradient(120deg, transparent 0 44%, rgba(255,255,255,.055) 45%, transparent 46% 58%, rgba(255,106,0,.08) 59%, transparent 60%), repeating-linear-gradient(135deg, rgba(255,255,255,.035) 0 1px, transparent 1px 18px); opacity: .72; }
 .product-stage::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; background: linear-gradient(180deg, rgba(255,255,255,.04), transparent 34%, rgba(0,0,0,.24)); }
 .product-object { position: relative; z-index: 5; width: 74%; height: 74%; display: grid; place-items: center; transform-style: preserve-3d; transform: translate3d(var(--px), var(--py), 0) rotateX(var(--rx)) rotateY(var(--ry)); transition: transform .45s cubic-bezier(.2,.72,.2,1); animation: productFloat 6s ease-in-out infinite; }
 @keyframes productFloat { 50% { translate: 0 -12px; } }
