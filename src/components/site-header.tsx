@@ -33,7 +33,7 @@ export function SiteHeader() {
     <header className={`site-header ${scrolled || open ? "is-solid" : ""}`}>
       <div className="container-wide nav-inner">
         <a href="#top" className="wordmark" aria-label={`${brand.name} home`}>
-          <span>d</span>
+          <span>dp</span>
           <div>
             <b>{brand.shortName}</b>
             <small>DENTAL TECHNOLOGIES</small>

@@ -63,7 +63,7 @@ export default function HomePage() {
             />
             <div className="hero-product-caption">
               <span>01 / 04</span>
-              <p>db Activa One</p>
+              <p>dp A1 Pro</p>
             </div>
           </Reveal>
         </div>
@@ -80,8 +80,8 @@ export default function HomePage() {
               <h2>Four instruments.<br />One composed system.</h2>
             </div>
             <p>
-              Each product is presented with editable placeholder content and a CSS-built concept render,
-              ready to be replaced with approved product assets and technical data.
+              Each product is presented in the same dark studio language as the DP A1 Pro image,
+              ready for approved assets and technical data.
             </p>
           </Reveal>
 
@@ -356,7 +356,7 @@ export default function HomePage() {
         <div className="container-wide footer-grid">
           <div className="footer-brand">
             <div className="wordmark footer-wordmark">
-              <span>d</span><div><b>{brand.shortName}</b><small>DENTAL TECHNOLOGIES</small></div>
+              <span>dp</span><div><b>{brand.shortName}</b><small>DENTAL TECHNOLOGIES</small></div>
             </div>
             <p>
               Premium placeholder website concept for an endodontic technology brand.

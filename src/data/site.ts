@@ -18,8 +18,8 @@ import {
 export type ProductKey = "activator" | "motor" | "locator" | "ultrasonic";
 
 export const brand = {
-  name: "db",
-  shortName: "db",
+  name: "dp",
+  shortName: "dp",
   descriptor: "Endodontic Technology",
   email: "hello@placeholder.example",
   phone: "+00 000 000 000",
@@ -31,11 +31,11 @@ export const products = [
     number: "01",
     key: "activator" as ProductKey,
     category: "Irrigant Activation",
-    name: "Endo Activator",
-    shortName: "db Activa One",
+    name: "A1 Pro Endo Activator",
+    shortName: "dp A1 Pro",
     description:
       "Designed to support effective irrigant activation through a controlled and ergonomic workflow.",
-    overview: "Controlled activation in a balanced, lightweight handpiece.",
+    overview: "Controlled activation in the DP A1 Pro handpiece.",
     features: [
       "Ergonomic handpiece design",
       "Multiple operating settings",
@@ -48,7 +48,7 @@ export const products = [
     key: "motor" as ProductKey,
     category: "Canal Preparation",
     name: "Endo Motor",
-    shortName: "db Motive X",
+    shortName: "dp Motive X",
     description:
       "A compact preparation platform created for precise settings, clear feedback, and an organized chairside workflow.",
     overview: "Intuitive preparation controls with an architectural console.",
@@ -64,7 +64,7 @@ export const products = [
     key: "locator" as ProductKey,
     category: "Working Length",
     name: "Apex Locator",
-    shortName: "db Locate S",
+    shortName: "dp Locate S",
     description:
       "A clear, focused locator interface designed to support confident working-length assessment and efficient setup.",
     overview: "Focused visual guidance with a calm, distraction-free display.",
@@ -80,7 +80,7 @@ export const products = [
     key: "ultrasonic" as ProductKey,
     category: "Ultrasonic Irrigation",
     name: "Ultrasonic Irrigation System",
-    shortName: "db Sono Flow",
+    shortName: "dp Sono Flow",
     description:
       "A refined ultrasonic platform developed to integrate controlled irrigation support into modern endodontic protocols.",
     overview: "A coordinated ultrasonic system with precise chairside control.",
@@ -131,7 +131,7 @@ export const workflow = [
   {
     step: "03",
     title: "Activate",
-    product: "Endo Activator",
+    product: "A1 Pro Endo Activator",
     text: "Introduce controlled activation as defined by the practice workflow.",
     icon: Activity,
     key: "activator" as ProductKey,

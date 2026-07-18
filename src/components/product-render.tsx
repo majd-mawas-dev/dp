@@ -1,5 +1,6 @@
 import { CSSProperties, MouseEvent, useRef } from "react";
 import type { ProductKey } from "@/data/site";
+import dpProduct from "@/assets/dp.png";
 
 export function ProductRender({
   variant,
@@ -50,7 +51,7 @@ export function ProductRender({
           "--py": "0px",
         } as CSSProperties
       }
-      aria-label={`Stylized placeholder render for ${variant}`}
+      aria-label={`Product render for ${variant}`}
       role="img"
     >
       <div className="product-spotlight" />
@@ -74,16 +75,11 @@ export function ProductRender({
 
 function Activator() {
   return (
-    <div className="device activator-device">
-      <div className="activator-tip"><span /></div>
-      <div className="activator-neck" />
-      <div className="activator-body">
-        <div className="device-rim" />
-        <div className="device-button" />
-        <div className="device-logo">A</div>
-      </div>
-      <div className="activator-cap" />
-    </div>
+    <img
+      className="product-photo activator-photo"
+      src={dpProduct}
+      alt="DP A1 Pro Endo Activator product"
+    />
   );
 }
 
