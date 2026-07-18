@@ -47,7 +47,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="desktop-cta">
-          <MagneticButton href="#contact" variant="outline">Request a Demo</MagneticButton>
+          <MagneticButton href="#contact" variant="outline">Book a Demo</MagneticButton>
         </div>
 
         <button
@@ -69,7 +69,7 @@ export function SiteHeader() {
               <span>0{index + 1}</span>{label}
             </a>
           ))}
-          <MagneticButton href="#contact" variant="solid">Request a Demo</MagneticButton>
+          <MagneticButton href="#contact" variant="solid">Book a Demo</MagneticButton>
         </nav>
       </div>
     </header>

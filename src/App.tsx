@@ -30,26 +30,26 @@ export default function HomePage() {
               <div className="eyebrow"><span />{brand.descriptor}</div>
             </Reveal>
             <Reveal delay={80}>
-              <h1 id="hero-title">Precision<br />You Can <em>Feel.</em></h1>
+              <h1 id="hero-title">Endodontic Care,<br />Made <em>Clear.</em></h1>
             </Reveal>
             <Reveal delay={160}>
               <p className="hero-intro">
-                A considered collection of endodontic technologies designed to support controlled,
-                efficient, and modern clinical workflows.
+                A refined dental technology collection that helps clinicians move from diagnosis
+                to irrigation with clear controls, balanced handling, and a calm chairside workflow.
               </p>
             </Reveal>
             <Reveal delay={220} className="hero-actions">
               <MagneticButton href="#products" variant="solid">
-                Explore the Collection <ArrowRight size={17} />
+                Explore Products <ArrowRight size={17} />
               </MagneticButton>
               <MagneticButton href="#contact" variant="text">
-                Request a Demonstration <ArrowUpRight size={16} />
+                Book a Demo <ArrowUpRight size={16} />
               </MagneticButton>
             </Reveal>
             <Reveal delay={300} className="hero-meta">
-              <div><b>04</b><span>Integrated products</span></div>
-              <div><b>EU</b><span>European design direction</span></div>
-              <div><b>01</b><span>Coherent workflow</span></div>
+              <div><b>04</b><span>Core treatment devices</span></div>
+              <div><b>EU</b><span>Design-led engineering</span></div>
+              <div><b>01</b><span>Connected clinical flow</span></div>
             </Reveal>
           </div>
 
@@ -58,7 +58,7 @@ export default function HomePage() {
             <div className="hero-orbit hero-orbit-two" />
             <ProductRender
               variant="activator"
-              annotation="Precision-Controlled Activation"
+              annotation="Controlled Irrigant Activation"
               className="hero-product"
             />
             <div className="hero-product-caption">
@@ -76,12 +76,12 @@ export default function HomePage() {
         <div className="container-wide">
           <Reveal className="section-heading split-heading">
             <div>
-              <span className="section-index">Collection / 2026</span>
-              <h2>Four instruments.<br />One composed system.</h2>
+              <span className="section-index">Product system</span>
+              <h2>Focused tools for<br />modern endodontics.</h2>
             </div>
             <p>
-              Each product is presented in the same dark studio language as the DP A1 Pro image,
-              ready for approved assets and technical data.
+              Every device has a clear place in the treatment flow, helping teams compare purpose,
+              handling, setup, and support without unnecessary complexity.
             </p>
           </Reveal>
 
@@ -109,13 +109,13 @@ export default function HomePage() {
       <section id="products" className="products-editorial">
         <div className="container-wide products-intro">
           <Reveal>
-            <div className="eyebrow"><span />Product collection</div>
-            <h2>Built around the<br />clinical sequence.</h2>
+            <div className="eyebrow"><span />Clinical product line</div>
+            <h2>Designed for the way<br />endodontists work.</h2>
           </Reveal>
           <Reveal delay={100}>
             <p>
-              A flexible editorial structure for presenting approved product benefits,
-              documentation, and specifications without unsupported claims.
+              Clear product stories make it easier to understand what each device does, where it
+              fits, and how it supports a more organized operatory.
             </p>
           </Reveal>
         </div>
@@ -142,10 +142,10 @@ export default function HomePage() {
                 </ul>
                 <div className="product-story-actions">
                   <MagneticButton href="#contact" variant="outline">
-                    View Product <ArrowUpRight size={16} />
+                    Discuss This Product <ArrowUpRight size={16} />
                   </MagneticButton>
                   <a href="#resources" className="spec-link">
-                    Technical specifications <MoveRight size={17} />
+                    Review specifications <MoveRight size={17} />
                   </a>
                 </div>
                 <div className="spec-strip">
@@ -163,11 +163,11 @@ export default function HomePage() {
         </div>
         <div className="container-wide">
           <Reveal className="engineering-heading">
-            <span className="section-index">European engineering / placeholder narrative</span>
-            <h2>Engineered Around<br />Every Detail.</h2>
+            <span className="section-index">Engineering approach</span>
+            <h2>Quiet details.<br />Better control.</h2>
             <p>
-              A visual language of disciplined geometry, resolved interfaces, and material contrast.
-              Replace this narrative with validated engineering and quality information.
+              From display contrast to handpiece balance, every interaction is shaped to reduce
+              friction and keep attention on the procedure.
             </p>
           </Reveal>
 
@@ -176,9 +176,9 @@ export default function HomePage() {
               <div className="detail-ring ring-one" />
               <div className="detail-ring ring-two" />
               <div className="detail-measure measure-x">42.0 <small>mm*</small></div>
-              <div className="detail-measure measure-y">Ø 18.5*</div>
+              <div className="detail-measure measure-y">18.5 mm*</div>
               <ProductRender variant="motor" />
-              <span className="placeholder-mark">* Editable placeholder measurement</span>
+              <span className="placeholder-mark">* Confirm final measurements before publication</span>
             </Reveal>
 
             <div className="principles-list">
@@ -201,12 +201,12 @@ export default function HomePage() {
         <div className="container-wide">
           <Reveal className="section-heading split-heading">
             <div>
-              <span className="section-index">Integrated workflow</span>
-              <h2>From location<br />to completion.</h2>
+              <span className="section-index">Treatment workflow</span>
+              <h2>One sequence,<br />clearly supported.</h2>
             </div>
             <p>
-              A clear four-step framework shows how the collection may be positioned within an
-              endodontic workflow. Final copy should align with approved indications and instructions for use.
+              The product line follows the clinical rhythm of endodontic care, from locating and
+              preparation through activation and irrigation support.
             </p>
           </Reveal>
 
@@ -231,10 +231,11 @@ export default function HomePage() {
       <section className="benefits-section">
         <div className="container-wide benefits-grid">
           <Reveal className="benefits-heading">
-            <span className="section-index">Designed for practice</span>
-            <h2>Quiet confidence,<br />at every touchpoint.</h2>
+            <span className="section-index">Practice advantages</span>
+            <h2>Simple to adopt.<br />Refined in use.</h2>
             <p>
-              Use this section for verified product and service advantages. All current language is intentionally general.
+              Clean controls, thoughtful ergonomics, and organized accessories help dental teams
+              evaluate, introduce, and use the collection with confidence.
             </p>
           </Reveal>
           <div className="benefits-list">
@@ -256,11 +257,11 @@ export default function HomePage() {
       <section id="about" className="trust-section section-grid">
         <div className="container-wide">
           <Reveal className="trust-heading">
-            <div className="eyebrow"><span />Trust architecture</div>
-            <h2>Evidence, service,<br />and responsible clarity.</h2>
+            <div className="eyebrow"><span />Professional support</div>
+            <h2>Documentation and service,<br />kept straightforward.</h2>
             <p>
-              All figures, marks, logos, and quotations below are clearly labeled placeholders.
-              Replace only with verified, approved information.
+              Product information, service resources, and distributor support are structured so
+              practices can review each device with clarity before adoption.
             </p>
           </Reveal>
 
@@ -272,30 +273,30 @@ export default function HomePage() {
                   <Icon size={21} strokeWidth={1.4} />
                   <strong>{item.value}</strong>
                   <span>{item.label}</span>
-                  <small>EDITABLE PLACEHOLDER</small>
+                  <small>SUPPORT AREA</small>
                 </Reveal>
               );
             })}
           </div>
 
-          <div className="logo-placeholder-row" aria-label="Distributor logo placeholders">
-            {["DISTRIBUTOR 01", "DISTRIBUTOR 02", "DISTRIBUTOR 03", "DISTRIBUTOR 04", "DISTRIBUTOR 05"].map((logo) => (
-              <div key={logo}>{logo}<small>PLACEHOLDER</small></div>
+          <div className="logo-placeholder-row" aria-label="Distributor support areas">
+            {["TRAINING", "SERVICE", "CATALOGUE", "COMPLIANCE", "DISTRIBUTION"].map((logo) => (
+              <div key={logo}>{logo}<small>SUPPORT AREA</small></div>
             ))}
           </div>
 
           <Reveal className="testimonial-card">
             <Quote size={70} strokeWidth={0.8} aria-hidden="true" />
             <blockquote>
-              “Insert an approved testimonial describing the clinician’s experience with the product,
-              service, or workflow. Avoid unverified performance or treatment-outcome claims.”
+              "A strong endodontic system should feel organized from the first setup:
+              clear information, intuitive controls, and instruments that support confident care."
             </blockquote>
             <div className="testimonial-person">
-              <div className="portrait-placeholder"><span>Portrait</span></div>
+              <div className="portrait-placeholder"><span>Clinic</span></div>
               <div>
-                <b>[Dentist’s name]</b>
-                <span>[Professional title] · [Clinic]</span>
-                <small>[Country] — EDITABLE PLACEHOLDER</small>
+                <b>Clinical workflow insight</b>
+                <span>Endodontic practice review</span>
+                <small>Use approved clinician feedback before launch</small>
               </div>
             </div>
           </Reveal>
@@ -305,15 +306,15 @@ export default function HomePage() {
       <section id="resources" className="resources-section">
         <div className="container-wide resource-grid">
           <Reveal>
-            <span className="section-index">Clinical resources</span>
-            <h2>Documentation,<br />clearly organized.</h2>
+            <span className="section-index">Product resources</span>
+            <h2>Everything teams need<br />to evaluate the line.</h2>
           </Reveal>
           <div className="resource-links">
             {[
-              ["Product catalogue", "Editable PDF placeholder", Download],
-              ["Instructions for use", "Add approved document links", ArrowUpRight],
-              ["Technical specifications", "Replace placeholder data", ArrowUpRight],
-              ["Distributor resources", "Authorized access placeholder", ArrowUpRight],
+              ["Product catalogue", "Explore the full collection and product positioning", Download],
+              ["Instructions for use", "Review clinical, cleaning, and care documents", ArrowUpRight],
+              ["Technical specifications", "Compare device parameters and accessories", ArrowUpRight],
+              ["Distributor support", "Request training, service, and regional guidance", ArrowUpRight],
             ].map(([title, note, Icon]) => {
               const ResourceIcon = Icon as typeof Download;
               return (
@@ -331,21 +332,22 @@ export default function HomePage() {
         <div className="oversized-gold" aria-hidden="true">PRECISION</div>
         <div className="container-wide final-grid">
           <Reveal className="final-copy">
-            <div className="eyebrow dark"><span />Start a conversation</div>
-            <h2>Bring Greater Precision<br />to Your Practice.</h2>
+            <div className="eyebrow dark"><span />Talk to our team</div>
+            <h2>Find the right setup<br />for your clinic.</h2>
             <p>
-              Request a tailored product presentation or receive the editable collection catalogue.
+              Share your clinical priorities and we will help you review the collection, compare
+              options, and prepare the right product information for your team.
             </p>
             <div className="final-buttons">
-              <MagneticButton href="#demo-form" variant="solid">Request a Demonstration</MagneticButton>
+              <MagneticButton href="#demo-form" variant="solid">Book a Product Demo</MagneticButton>
               <MagneticButton href="#resources" variant="outline">
-                Download the Product Catalogue <Download size={16} />
+                View Product Resources <Download size={16} />
               </MagneticButton>
             </div>
           </Reveal>
           <Reveal delay={100} className="form-panel">
             <div className="form-panel-heading">
-              <span>Demonstration request</span><b>01—06</b>
+              <span>Product consultation</span><b>01-06</b>
             </div>
             <div id="demo-form"><ContactForm /></div>
           </Reveal>
@@ -359,7 +361,7 @@ export default function HomePage() {
               <span>dp</span><div><b>{brand.shortName}</b><small>DENTAL TECHNOLOGIES</small></div>
             </div>
             <p>
-              Premium placeholder website concept for an endodontic technology brand.
+              Dental technology for endodontic teams that value clarity, control, and a more organized clinical workflow.
             </p>
             <div className="socials">
               <a href="#" aria-label="LinkedIn"><Linkedin size={18} /></a>
@@ -368,8 +370,8 @@ export default function HomePage() {
           </div>
 
           <FooterColumn title="Products" links={products.map((product) => product.name)} />
-          <FooterColumn title="Resources" links={["Clinical resources", "Product catalogue", "Distributor portal", "Support"]} />
-          <FooterColumn title="Company" links={["Technology", "About", "Contact", "Careers"]} />
+          <FooterColumn title="Resources" links={["Product resources", "Catalogue", "Distributor support", "Service"]} />
+          <FooterColumn title="Company" links={["Technology", "About", "Contact", "Partnerships"]} />
 
           <div className="footer-contact">
             <span>Contact</span>
@@ -381,7 +383,7 @@ export default function HomePage() {
 
         <div className="container-wide footer-bottom">
           <div>
-            <span>© {new Date().getFullYear()} {brand.name}</span>
+            <span>(c) {new Date().getFullYear()} {brand.name}</span>
             <a href="#">Privacy policy</a>
             <a href="#">Terms</a>
             <a href="#">Medical device disclaimer</a>
@@ -389,8 +391,8 @@ export default function HomePage() {
           <button type="button"><Globe2 size={16} /> Europe / English <ChevronRight size={15} /></button>
         </div>
         <div className="disclaimer container-wide">
-          Website content, product names, specifications, regulatory statements, metrics, logos, and testimonials are editable placeholders.
-          This concept does not make medical claims and is not a substitute for approved labeling or instructions for use.
+          Product information should be reviewed against approved labeling, regulatory statements, and instructions for use before publication.
+          This website does not make treatment-outcome claims and should not replace official product documentation.
         </div>
       </footer>
     </main>

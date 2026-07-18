@@ -20,10 +20,10 @@ export type ProductKey = "activator" | "motor" | "locator" | "ultrasonic";
 export const brand = {
   name: "dp",
   shortName: "dp",
-  descriptor: "Endodontic Technology",
-  email: "hello@placeholder.example",
+  descriptor: "Advanced Endodontic Equipment",
+  email: "contact@dp-dental.example",
   phone: "+00 000 000 000",
-  address: "[Editable European office address]",
+  address: "European product and clinical support office",
 };
 
 export const products = [
@@ -34,14 +34,14 @@ export const products = [
     name: "A1 Pro Endo Activator",
     shortName: "dp A1 Pro",
     description:
-      "Designed to support effective irrigant activation through a controlled and ergonomic workflow.",
-    overview: "Controlled activation in the DP A1 Pro handpiece.",
+      "A lightweight activation handpiece made for stable access, simple mode selection, and controlled irrigant movement throughout endodontic treatment.",
+    overview: "Balanced irrigant activation for controlled chairside handling.",
     features: [
-      "Ergonomic handpiece design",
-      "Multiple operating settings",
-      "Easy-to-clean components",
+      "Slim grip for comfortable intraoral positioning",
+      "Selectable modes for common activation protocols",
+      "Removable tips with smooth cleanable surfaces",
     ],
-    specs: ["[Editable frequency range]", "[Editable weight]", "[Editable tip options]"],
+    specs: ["Activation modes", "Handpiece weight", "Tip selection"],
   },
   {
     number: "02",
@@ -50,14 +50,14 @@ export const products = [
     name: "Endo Motor",
     shortName: "dp Motive X",
     description:
-      "A compact preparation platform created for precise settings, clear feedback, and an organized chairside workflow.",
-    overview: "Intuitive preparation controls with an architectural console.",
+      "A compact motor platform that keeps speed, torque, and program selection easy to read, helping clinicians stay focused during canal preparation.",
+    overview: "Readable preparation control in a compact motor platform.",
     features: [
-      "Editable torque and speed presets",
-      "High-contrast interface",
-      "Compact charging base",
+      "Programmable speed and torque profiles",
+      "Clear display for fast setting confirmation",
+      "Compact base for an organized operatory",
     ],
-    specs: ["[Editable torque range]", "[Editable RPM range]", "[Editable battery life]"],
+    specs: ["Torque profile", "Speed range", "Power system"],
   },
   {
     number: "03",
@@ -66,14 +66,14 @@ export const products = [
     name: "Apex Locator",
     shortName: "dp Locate S",
     description:
-      "A clear, focused locator interface designed to support confident working-length assessment and efficient setup.",
-    overview: "Focused visual guidance with a calm, distraction-free display.",
+      "A focused apex locator designed for quick setup, clear visual guidance, and tidy accessory connections during working-length assessment.",
+    overview: "Clear working-length feedback with a focused display.",
     features: [
-      "Large visual indicator",
-      "Compact footprint",
-      "Simple accessory connection",
+      "Large visual indicator for fast orientation",
+      "Compact footprint for flexible placement",
+      "Organized accessory connection layout",
     ],
-    specs: ["[Editable display size]", "[Editable dimensions]", "[Editable accessories]"],
+    specs: ["Display type", "Device footprint", "Accessory set"],
   },
   {
     number: "04",
@@ -82,31 +82,31 @@ export const products = [
     name: "Ultrasonic Irrigation System",
     shortName: "dp Sono Flow",
     description:
-      "A refined ultrasonic platform developed to integrate controlled irrigation support into modern endodontic protocols.",
-    overview: "A coordinated ultrasonic system with precise chairside control.",
+      "An ultrasonic irrigation platform that brings power adjustment, handpiece comfort, and tip organization into one clean clinical setup.",
+    overview: "Ultrasonic irrigation support with organized chairside control.",
     features: [
-      "Adjustable operating levels",
-      "Slim handpiece geometry",
-      "Organized accessory system",
+      "Adjustable power levels for treatment protocols",
+      "Slim handpiece profile for better access",
+      "Organized tip storage and accessory flow",
     ],
-    specs: ["[Editable power settings]", "[Editable frequency]", "[Editable tip system]"],
+    specs: ["Power levels", "Frequency profile", "Tip system"],
   },
 ];
 
 export const principles = [
   {
     title: "Precision",
-    text: "Clear interfaces, deliberate tolerances, and carefully resolved handpiece geometry.",
+    text: "Clear visual feedback and balanced handpieces help clinicians work with greater focus.",
     icon: LocateFixed,
   },
   {
     title: "Control",
-    text: "Focused settings and tactile interactions built around a composed clinical workflow.",
+    text: "Device settings and accessory handling are arranged around the real treatment sequence.",
     icon: CircleGauge,
   },
   {
     title: "Reliability",
-    text: "Materials, connections, and service pathways designed for professional environments.",
+    text: "Durable surfaces, tidy connections, and service resources support everyday practice use.",
     icon: ShieldCheck,
   },
 ];
@@ -116,7 +116,7 @@ export const workflow = [
     step: "01",
     title: "Locate",
     product: "Apex Locator",
-    text: "Establish working-length information with a clear visual reference.",
+    text: "Review working-length feedback through a clear display and organized accessory setup.",
     icon: LocateFixed,
     key: "locator" as ProductKey,
   },
@@ -124,7 +124,7 @@ export const workflow = [
     step: "02",
     title: "Prepare",
     product: "Endo Motor",
-    text: "Set speed and torque parameters for the selected preparation protocol.",
+    text: "Set preparation parameters with readable speed, torque, and program feedback.",
     icon: Settings2,
     key: "motor" as ProductKey,
   },
@@ -132,7 +132,7 @@ export const workflow = [
     step: "03",
     title: "Activate",
     product: "A1 Pro Endo Activator",
-    text: "Introduce controlled activation as defined by the practice workflow.",
+    text: "Use controlled activation modes to support the selected irrigation protocol.",
     icon: Activity,
     key: "activator" as ProductKey,
   },
@@ -140,24 +140,24 @@ export const workflow = [
     step: "04",
     title: "Complete",
     product: "Ultrasonic System",
-    text: "Complete the sequence with an organized ultrasonic irrigation setup.",
+    text: "Complete the workflow with ultrasonic support and organized tip handling.",
     icon: Waves,
     key: "ultrasonic" as ProductKey,
   },
 ];
 
 export const benefits = [
-  { title: "Ergonomic design", icon: Hand },
-  { title: "Intuitive operation", icon: Sparkles },
-  { title: "Consistent workflow", icon: RotateCw },
-  { title: "Premium materials", icon: Layers3 },
-  { title: "Professional support", icon: Headphones },
-  { title: "Modern practice fit", icon: Boxes },
+  { title: "Comfortable handpiece control", icon: Hand },
+  { title: "Readable clinical interfaces", icon: Sparkles },
+  { title: "Organized treatment sequence", icon: RotateCw },
+  { title: "Refined material finishes", icon: Layers3 },
+  { title: "Responsive product support", icon: Headphones },
+  { title: "Clean operatory integration", icon: Boxes },
 ];
 
 export const trustItems = [
-  { value: "[CE / regulatory placeholder]", label: "Certification information", icon: BadgeCheck },
-  { value: "[XX]+", label: "Years of engineering experience", icon: CircleGauge },
-  { value: "[XX]", label: "Countries served", icon: RadioTower },
-  { value: "[Logo placeholders]", label: "Authorized distributors", icon: Boxes },
+  { value: "Ready", label: "Regulatory documentation support", icon: BadgeCheck },
+  { value: "Focused", label: "Workflow-led product design", icon: CircleGauge },
+  { value: "Regional", label: "Distributor support network", icon: RadioTower },
+  { value: "Service", label: "Product training and maintenance", icon: Boxes },
 ];
