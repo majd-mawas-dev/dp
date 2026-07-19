@@ -35,7 +35,6 @@ export function ContactForm() {
           <select name="product" defaultValue="">
             <option value="" disabled>Choose a product</option>
             {products.map((product) => <option key={product.key}>{product.name}</option>)}
-            <option>Full collection</option>
           </select>
         </label>
         <label className="form-wide">

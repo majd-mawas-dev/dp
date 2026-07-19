@@ -18,6 +18,8 @@ import { SiteHeader } from "@/components/site-header";
 import { benefits, brand, principles, products, trustItems, workflow } from "@/data/site";
 
 export default function HomePage() {
+  const product = products[0];
+
   return (
     <main id="top">
       <SiteHeader />
@@ -34,7 +36,7 @@ export default function HomePage() {
             </Reveal>
             <Reveal delay={160}>
               <p className="hero-intro">
-                A refined dental technology collection that helps clinicians move from diagnosis
+                A refined dental technology device that helps clinicians move from diagnosis
                 to irrigation with clear controls, balanced handling, and a calm chairside workflow.
               </p>
             </Reveal>
@@ -47,9 +49,9 @@ export default function HomePage() {
               </MagneticButton>
             </Reveal>
             <Reveal delay={300} className="hero-meta">
-              <div><b>04</b><span>Core treatment devices</span></div>
+              <div><b>01</b><span>Focused activation device</span></div>
               <div><b>EU</b><span>Design-led engineering</span></div>
-              <div><b>01</b><span>Connected clinical flow</span></div>
+              <div><b>03</b><span>Clear chairside steps</span></div>
             </Reveal>
           </div>
 
@@ -62,8 +64,8 @@ export default function HomePage() {
               className="hero-product"
             />
             <div className="hero-product-caption">
-              <span>01 / 04</span>
-              <p>dp A1 Pro</p>
+              <span>01 / 01</span>
+              <p>{product.shortName}</p>
             </div>
           </Reveal>
         </div>
@@ -77,31 +79,29 @@ export default function HomePage() {
           <Reveal className="section-heading split-heading">
             <div>
               <span className="section-index">Product system</span>
-              <h2>Focused tools for<br />modern endodontics.</h2>
+              <h2>One focused tool for<br />modern endodontics.</h2>
             </div>
             <p>
-              Every device has a clear place in the treatment flow, helping teams compare purpose,
-              handling, setup, and support without unnecessary complexity.
+              The A1 Pro is presented with clear handling details, workflow support, and product
+              resources so teams can evaluate it without unnecessary complexity.
             </p>
           </Reveal>
 
-          <div className="overview-grid">
-            {products.map((product, index) => (
-              <Reveal key={product.key} delay={index * 70} className="overview-card">
-                <div className="overview-card-top">
-                  <span>{product.category}</span><b>{product.number}</b>
+          <div className="overview-grid overview-grid-single">
+            <Reveal className="overview-card">
+              <div className="overview-card-top">
+                <span>{product.category}</span><b>{product.number}</b>
+              </div>
+              <ProductRender variant={product.key} compact />
+              <div className="overview-card-copy">
+                <h3>{product.name}</h3>
+                <p>{product.overview}</p>
+                <div className="overview-reveal">
+                  <span>{product.features[0]}</span>
+                  <ArrowUpRight size={18} />
                 </div>
-                <ProductRender variant={product.key} compact />
-                <div className="overview-card-copy">
-                  <h3>{product.name}</h3>
-                  <p>{product.overview}</p>
-                  <div className="overview-reveal">
-                    <span>{product.features[0]}</span>
-                    <ArrowUpRight size={18} />
-                  </div>
-                </div>
-              </Reveal>
-            ))}
+              </div>
+            </Reveal>
           </div>
         </div>
       </section>
@@ -109,52 +109,50 @@ export default function HomePage() {
       <section id="products" className="products-editorial">
         <div className="container-wide products-intro">
           <Reveal>
-            <div className="eyebrow"><span />Clinical product line</div>
-            <h2>Designed for the way<br />endodontists work.</h2>
+            <div className="eyebrow"><span />Clinical product focus</div>
+            <h2>Designed for calm,<br />controlled activation.</h2>
           </Reveal>
           <Reveal delay={100}>
             <p>
-              Clear product stories make it easier to understand what each device does, where it
-              fits, and how it supports a more organized operatory.
+              The page now focuses on the first product only, with simplified details that make
+              setup, handling, and next steps easy to scan on any screen.
             </p>
           </Reveal>
         </div>
 
-        {products.map((product, index) => (
-          <article key={product.key} className={`product-story ${index % 2 ? "is-reversed" : ""}`}>
-            <div className="product-story-visual">
-              <div className="sticky-product">
-                <ProductRender variant={product.key} />
-                <div className="technical-coordinate coordinate-a">X / {12 + index * 7}.0</div>
-                <div className="technical-coordinate coordinate-b">REF. {product.number}-A</div>
+        <article className="product-story">
+          <div className="product-story-visual">
+            <div className="sticky-product">
+              <ProductRender variant={product.key} />
+              <div className="technical-coordinate coordinate-a">X / 12.0</div>
+              <div className="technical-coordinate coordinate-b">REF. {product.number}-A</div>
+            </div>
+          </div>
+          <div className="product-story-copy">
+            <Reveal>
+              <div className="product-number">{product.number}</div>
+              <span className="product-category">{product.category}</span>
+              <h3>{product.name}</h3>
+              <p className="product-description">{product.description}</p>
+              <ul>
+                {product.features.map((feature) => (
+                  <li key={feature}><span />{feature}</li>
+                ))}
+              </ul>
+              <div className="product-story-actions">
+                <MagneticButton href="#contact" variant="outline">
+                  Discuss This Product <ArrowUpRight size={16} />
+                </MagneticButton>
+                <a href="#resources" className="spec-link">
+                  Review specifications <MoveRight size={17} />
+                </a>
               </div>
-            </div>
-            <div className="product-story-copy">
-              <Reveal>
-                <div className="product-number">{product.number}</div>
-                <span className="product-category">{product.category}</span>
-                <h3>{product.name}</h3>
-                <p className="product-description">{product.description}</p>
-                <ul>
-                  {product.features.map((feature) => (
-                    <li key={feature}><span />{feature}</li>
-                  ))}
-                </ul>
-                <div className="product-story-actions">
-                  <MagneticButton href="#contact" variant="outline">
-                    Discuss This Product <ArrowUpRight size={16} />
-                  </MagneticButton>
-                  <a href="#resources" className="spec-link">
-                    Review specifications <MoveRight size={17} />
-                  </a>
-                </div>
-                <div className="spec-strip">
-                  {product.specs.map((spec) => <span key={spec}>{spec}</span>)}
-                </div>
-              </Reveal>
-            </div>
-          </article>
-        ))}
+              <div className="spec-strip">
+                {product.specs.map((spec) => <span key={spec}>{spec}</span>)}
+              </div>
+            </Reveal>
+          </div>
+        </article>
       </section>
 
       <section id="technology" className="engineering-section section-grid">
@@ -177,7 +175,7 @@ export default function HomePage() {
               <div className="detail-ring ring-two" />
               <div className="detail-measure measure-x">42.0 <small>mm*</small></div>
               <div className="detail-measure measure-y">18.5 mm*</div>
-              <ProductRender variant="motor" />
+              <ProductRender variant={product.key} />
               <span className="placeholder-mark">* Confirm final measurements before publication</span>
             </Reveal>
 
@@ -202,11 +200,11 @@ export default function HomePage() {
           <Reveal className="section-heading split-heading">
             <div>
               <span className="section-index">Treatment workflow</span>
-              <h2>One sequence,<br />clearly supported.</h2>
+              <h2>A cleaner sequence,<br />clearly supported.</h2>
             </div>
             <p>
-              The product line follows the clinical rhythm of endodontic care, from locating and
-              preparation through activation and irrigation support.
+              The activation workflow is reduced to the decisions clinicians need most: select,
+              position, and activate with confidence.
             </p>
           </Reveal>
 
@@ -235,7 +233,7 @@ export default function HomePage() {
             <h2>Simple to adopt.<br />Refined in use.</h2>
             <p>
               Clean controls, thoughtful ergonomics, and organized accessories help dental teams
-              evaluate, introduce, and use the collection with confidence.
+              evaluate, introduce, and use A1 Pro with confidence.
             </p>
           </Reveal>
           <div className="benefits-list">
@@ -307,11 +305,11 @@ export default function HomePage() {
         <div className="container-wide resource-grid">
           <Reveal>
             <span className="section-index">Product resources</span>
-            <h2>Everything teams need<br />to evaluate the line.</h2>
+            <h2>Everything teams need<br />to evaluate A1 Pro.</h2>
           </Reveal>
           <div className="resource-links">
             {[
-              ["Product catalogue", "Explore the full collection and product positioning", Download],
+              ["Product catalogue", "Explore A1 Pro details and product positioning", Download],
               ["Instructions for use", "Review clinical, cleaning, and care documents", ArrowUpRight],
               ["Technical specifications", "Compare device parameters and accessories", ArrowUpRight],
               ["Distributor support", "Request training, service, and regional guidance", ArrowUpRight],
@@ -335,8 +333,8 @@ export default function HomePage() {
             <div className="eyebrow dark"><span />Talk to our team</div>
             <h2>Find the right setup<br />for your clinic.</h2>
             <p>
-              Share your clinical priorities and we will help you review the collection, compare
-              options, and prepare the right product information for your team.
+              Share your clinical priorities and we will help you review the device, discuss fit,
+              and prepare the right A1 Pro product information for your team.
             </p>
             <div className="final-buttons">
               <MagneticButton href="#demo-form" variant="solid">Book a Product Demo</MagneticButton>
