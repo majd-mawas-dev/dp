@@ -40,6 +40,11 @@ export default function HomePage() {
                 to irrigation with clear controls, balanced handling, and a calm chairside workflow.
               </p>
             </Reveal>
+            <Reveal delay={190} className="hero-badges" aria-label="Product highlights">
+              <span>2026-ready interface</span>
+              <span>Clinical-grade clarity</span>
+              <span>Single-device focus</span>
+            </Reveal>
             <Reveal delay={220} className="hero-actions">
               <MagneticButton href="#products" variant="solid">
                 Explore Products <ArrowRight size={17} />
@@ -60,6 +65,7 @@ export default function HomePage() {
             <div className="hero-orbit hero-orbit-two" />
             <ProductRender
               variant="activator"
+              image="hero"
               annotation="Controlled Irrigant Activation"
               className="hero-product"
             />
@@ -92,7 +98,7 @@ export default function HomePage() {
               <div className="overview-card-top">
                 <span>{product.category}</span><b>{product.number}</b>
               </div>
-              <ProductRender variant={product.key} compact />
+              <ProductRender variant={product.key} image="closeup" compact />
               <div className="overview-card-copy">
                 <h3>{product.name}</h3>
                 <p>{product.overview}</p>
@@ -101,6 +107,15 @@ export default function HomePage() {
                   <ArrowUpRight size={18} />
                 </div>
               </div>
+            </Reveal>
+            <Reveal delay={90} className="overview-summary">
+              {product.specs.map((spec, index) => (
+                <div key={spec}>
+                  <span>0{index + 1}</span>
+                  <strong>{spec}</strong>
+                  <p>{product.features[index]}</p>
+                </div>
+              ))}
             </Reveal>
           </div>
         </div>
@@ -123,7 +138,7 @@ export default function HomePage() {
         <article className="product-story">
           <div className="product-story-visual">
             <div className="sticky-product">
-              <ProductRender variant={product.key} />
+              <ProductRender variant={product.key} image="studio" />
               <div className="technical-coordinate coordinate-a">X / 12.0</div>
               <div className="technical-coordinate coordinate-b">REF. {product.number}-A</div>
             </div>
@@ -175,7 +190,7 @@ export default function HomePage() {
               <div className="detail-ring ring-two" />
               <div className="detail-measure measure-x">42.0 <small>mm*</small></div>
               <div className="detail-measure measure-y">18.5 mm*</div>
-              <ProductRender variant={product.key} />
+              <ProductRender variant={product.key} image="kit" />
               <span className="placeholder-mark">* Confirm final measurements before publication</span>
             </Reveal>
 
@@ -215,7 +230,11 @@ export default function HomePage() {
               return (
                 <Reveal key={item.title} delay={index * 100} className="workflow-step">
                   <div className="workflow-node"><span>{item.step}</span></div>
-                  <ProductRender variant={item.key} compact />
+                  <ProductRender
+                    variant={item.key}
+                    image={index === 0 ? "closeup" : index === 1 ? "studio" : "kit"}
+                    compact
+                  />
                   <div className="workflow-title"><Icon size={18} strokeWidth={1.5} /><h3>{item.title}</h3></div>
                   <b>{item.product}</b>
                   <p>{item.text}</p>

@@ -1,16 +1,30 @@
 import { CSSProperties, MouseEvent, useRef } from "react";
 import type { ProductKey } from "@/data/site";
+import a1ProCloseup from "@/assets/a1-pro-closeup.png";
+import a1ProHero from "@/assets/a1-pro-hero.png";
+import a1ProKit from "@/assets/a1-pro-kit.png";
 import dpProduct from "@/assets/dp.png";
+
+type ProductImageKey = "studio" | "hero" | "closeup" | "kit";
+
+const productImages: Record<ProductImageKey, string> = {
+  studio: dpProduct,
+  hero: a1ProHero,
+  closeup: a1ProCloseup,
+  kit: a1ProKit,
+};
 
 export function ProductRender({
   variant,
   compact = false,
   annotation,
+  image = "studio",
   className = "",
 }: {
   variant: ProductKey;
   compact?: boolean;
   annotation?: string;
+  image?: ProductImageKey;
   className?: string;
 }) {
   const stage = useRef<HTMLDivElement>(null);
@@ -57,7 +71,7 @@ export function ProductRender({
       <div className="product-spotlight" />
       <div className="product-reflection" />
       <div className="product-object">
-        {variant === "activator" && <Activator />}
+        {variant === "activator" && <Activator image={image} />}
         {variant === "motor" && <Motor />}
         {variant === "locator" && <Locator />}
         {variant === "ultrasonic" && <Ultrasonic />}
@@ -73,11 +87,11 @@ export function ProductRender({
   );
 }
 
-function Activator() {
+function Activator({ image }: { image: ProductImageKey }) {
   return (
     <img
       className="product-photo activator-photo"
-      src={dpProduct}
+      src={productImages[image]}
       alt="DP A1 Pro Endo Activator product"
     />
   );
