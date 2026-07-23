@@ -32,31 +32,31 @@ export default function HomePage() {
               <div className="eyebrow"><span />{brand.descriptor}</div>
             </Reveal>
             <Reveal delay={80}>
-              <h1 id="hero-title">Endodontic Care,<br />Made <em>Clear.</em></h1>
+              <h1 id="hero-title">A simpler way<br />to clean root canals.</h1>
             </Reveal>
             <Reveal delay={160}>
               <p className="hero-intro">
-                A refined dental technology device that helps clinicians move from diagnosis
-                to irrigation with clear controls, balanced handling, and a calm chairside workflow.
+                A1 Pro helps dentists activate cleaning liquid during root canal treatment.
+                It is easy to hold, easy to set, and made to keep the work simple.
               </p>
             </Reveal>
             <Reveal delay={190} className="hero-badges" aria-label="Product highlights">
-              <span>2026-ready interface</span>
-              <span>Clinical-grade clarity</span>
-              <span>Single-device focus</span>
+              <span>Easy controls</span>
+              <span>Comfortable handpiece</span>
+              <span>Made for daily use</span>
             </Reveal>
             <Reveal delay={220} className="hero-actions">
               <MagneticButton href="#products" variant="solid">
-                Explore Products <ArrowRight size={17} />
+                See the Product <ArrowRight size={17} />
               </MagneticButton>
               <MagneticButton href="#contact" variant="text">
-                Book a Demo <ArrowUpRight size={16} />
+                Ask for a Demo <ArrowUpRight size={16} />
               </MagneticButton>
             </Reveal>
             <Reveal delay={300} className="hero-meta">
-              <div><b>01</b><span>Focused activation device</span></div>
-              <div><b>EU</b><span>Design-led engineering</span></div>
-              <div><b>03</b><span>Clear chairside steps</span></div>
+              <div><b>01</b><span>One focused device</span></div>
+              <div><b>Easy</b><span>Simple button flow</span></div>
+              <div><b>Clean</b><span>Clear everyday setup</span></div>
             </Reveal>
           </div>
 
@@ -66,7 +66,7 @@ export default function HomePage() {
             <ProductRender
               variant="activator"
               image="hero"
-              annotation="Controlled Irrigant Activation"
+              annotation="Root Canal Irrigation Support"
               className="hero-product"
             />
             <div className="hero-product-caption">
@@ -76,7 +76,7 @@ export default function HomePage() {
           </Reveal>
         </div>
         <a href="#collection-overview" className="scroll-cue" aria-label="Scroll to collection overview">
-          <span>Scroll to explore</span><ArrowDown size={16} />
+          <span>See more</span><ArrowDown size={16} />
         </a>
       </section>
 
@@ -84,12 +84,12 @@ export default function HomePage() {
         <div className="container-wide">
           <Reveal className="section-heading split-heading">
             <div>
-              <span className="section-index">Product system</span>
-              <h2>One focused tool for<br />modern endodontics.</h2>
+              <span className="section-index">The product</span>
+              <h2>One small device<br />with a clear job.</h2>
             </div>
             <p>
-              The A1 Pro is presented with clear handling details, workflow support, and product
-              resources so teams can evaluate it without unnecessary complexity.
+              A1 Pro is made to help with irrigation during root canal treatment.
+              The page keeps the details simple so your team can decide if it fits.
             </p>
           </Reveal>
 
@@ -124,13 +124,13 @@ export default function HomePage() {
       <section id="products" className="products-editorial">
         <div className="container-wide products-intro">
           <Reveal>
-            <div className="eyebrow"><span />Clinical product focus</div>
-            <h2>Designed for calm,<br />controlled activation.</h2>
+            <div className="eyebrow"><span />Product focus</div>
+            <h2>Easy to hold.<br />Easy to use.</h2>
           </Reveal>
           <Reveal delay={100}>
             <p>
-              The page now focuses on the first product only, with simplified details that make
-              setup, handling, and next steps easy to scan on any screen.
+              A1 Pro keeps the main choices close at hand, so the dentist can focus on the
+              treatment instead of the device.
             </p>
           </Reveal>
         </div>
@@ -156,10 +156,10 @@ export default function HomePage() {
               </ul>
               <div className="product-story-actions">
                 <MagneticButton href="#contact" variant="outline">
-                  Discuss This Product <ArrowUpRight size={16} />
+                  Ask About This Product <ArrowUpRight size={16} />
                 </MagneticButton>
                 <a href="#resources" className="spec-link">
-                  Review specifications <MoveRight size={17} />
+                  View details <MoveRight size={17} />
                 </a>
               </div>
               <div className="spec-strip">
@@ -176,11 +176,11 @@ export default function HomePage() {
         </div>
         <div className="container-wide">
           <Reveal className="engineering-heading">
-            <span className="section-index">Engineering approach</span>
-            <h2>Quiet details.<br />Better control.</h2>
+            <span className="section-index">How it helps</span>
+            <h2>Simple details<br />that make work easier.</h2>
             <p>
-              From display contrast to handpiece balance, every interaction is shaped to reduce
-              friction and keep attention on the procedure.
+              The grip, controls, and accessories are arranged to feel natural during a busy
+              dental appointment.
             </p>
           </Reveal>
 
@@ -214,12 +214,12 @@ export default function HomePage() {
         <div className="container-wide">
           <Reveal className="section-heading split-heading">
             <div>
-              <span className="section-index">Treatment workflow</span>
-              <h2>A cleaner sequence,<br />clearly supported.</h2>
+              <span className="section-index">Daily workflow</span>
+              <h2>Three simple steps.</h2>
             </div>
             <p>
-              The activation workflow is reduced to the decisions clinicians need most: select,
-              position, and activate with confidence.
+              Choose a setting, place the tip, and activate. The device is built around that
+              straightforward routine.
             </p>
           </Reveal>
 
@@ -248,11 +248,11 @@ export default function HomePage() {
       <section className="benefits-section">
         <div className="container-wide benefits-grid">
           <Reveal className="benefits-heading">
-            <span className="section-index">Practice advantages</span>
-            <h2>Simple to adopt.<br />Refined in use.</h2>
+            <span className="section-index">Why teams like it</span>
+            <h2>Simple to add<br />to the clinic.</h2>
             <p>
-              Clean controls, thoughtful ergonomics, and organized accessories help dental teams
-              evaluate, introduce, and use A1 Pro with confidence.
+              Clear controls and organized accessories make A1 Pro easier to introduce,
+              explain, and use during everyday appointments.
             </p>
           </Reveal>
           <div className="benefits-list">
@@ -274,11 +274,11 @@ export default function HomePage() {
       <section id="about" className="trust-section section-grid">
         <div className="container-wide">
           <Reveal className="trust-heading">
-            <div className="eyebrow"><span />Professional support</div>
-            <h2>Documentation and service,<br />kept straightforward.</h2>
+            <div className="eyebrow"><span />Support</div>
+            <h2>Clear information<br />when your team needs it.</h2>
             <p>
-              Product information, service resources, and distributor support are structured so
-              practices can review each device with clarity before adoption.
+              We keep product details, training notes, and support information easy to find
+              before your clinic makes a decision.
             </p>
           </Reveal>
 
@@ -305,14 +305,14 @@ export default function HomePage() {
           <Reveal className="testimonial-card">
             <Quote size={70} strokeWidth={0.8} aria-hidden="true" />
             <blockquote>
-              "A strong endodontic system should feel organized from the first setup:
-              clear information, intuitive controls, and instruments that support confident care."
+              "A good dental device should be easy to understand from the first setup:
+              clear controls, useful information, and support when the team needs it."
             </blockquote>
             <div className="testimonial-person">
               <div className="portrait-placeholder"><span>Clinic</span></div>
               <div>
-                <b>Clinical workflow insight</b>
-                <span>Endodontic practice review</span>
+                <b>Clinic workflow insight</b>
+                <span>Dental team review</span>
                 <small>Use approved clinician feedback before launch</small>
               </div>
             </div>
@@ -324,14 +324,14 @@ export default function HomePage() {
         <div className="container-wide resource-grid">
           <Reveal>
             <span className="section-index">Product resources</span>
-            <h2>Everything teams need<br />to evaluate A1 Pro.</h2>
+            <h2>Useful details<br />in one place.</h2>
           </Reveal>
           <div className="resource-links">
             {[
-              ["Product catalogue", "Explore A1 Pro details and product positioning", Download],
-              ["Instructions for use", "Review clinical, cleaning, and care documents", ArrowUpRight],
-              ["Technical specifications", "Compare device parameters and accessories", ArrowUpRight],
-              ["Distributor support", "Request training, service, and regional guidance", ArrowUpRight],
+              ["Product catalogue", "See the main A1 Pro details", Download],
+              ["Instructions for use", "Review cleaning, care, and use documents", ArrowUpRight],
+              ["Technical details", "Check device settings and accessories", ArrowUpRight],
+              ["Distributor support", "Ask about training, service, and availability", ArrowUpRight],
             ].map(([title, note, Icon]) => {
               const ResourceIcon = Icon as typeof Download;
               return (
@@ -350,21 +350,21 @@ export default function HomePage() {
         <div className="container-wide final-grid">
           <Reveal className="final-copy">
             <div className="eyebrow dark"><span />Talk to our team</div>
-            <h2>Find the right setup<br />for your clinic.</h2>
+            <h2>Want to see<br />if A1 Pro fits?</h2>
             <p>
-              Share your clinical priorities and we will help you review the device, discuss fit,
-              and prepare the right A1 Pro product information for your team.
+              Tell us about your clinic and we will send the right product details,
+              answer questions, or help arrange a demo.
             </p>
             <div className="final-buttons">
-              <MagneticButton href="#demo-form" variant="solid">Book a Product Demo</MagneticButton>
+              <MagneticButton href="#demo-form" variant="solid">Ask for a Demo</MagneticButton>
               <MagneticButton href="#resources" variant="outline">
-                View Product Resources <Download size={16} />
+                View Resources <Download size={16} />
               </MagneticButton>
             </div>
           </Reveal>
           <Reveal delay={100} className="form-panel">
             <div className="form-panel-heading">
-              <span>Product consultation</span><b>01-06</b>
+              <span>Product question</span><b>01-06</b>
             </div>
             <div id="demo-form"><ContactForm /></div>
           </Reveal>
@@ -378,7 +378,7 @@ export default function HomePage() {
               <span>dp</span><div><b>{brand.shortName}</b><small>DENTAL TECHNOLOGIES</small></div>
             </div>
             <p>
-              Dental technology for endodontic teams that value clarity, control, and a more organized clinical workflow.
+              Dental technology that helps clinics keep root canal irrigation simple and organized.
             </p>
             <div className="socials">
               <a href="#" aria-label="LinkedIn"><Linkedin size={18} /></a>
@@ -387,7 +387,7 @@ export default function HomePage() {
           </div>
 
           <FooterColumn title="Products" links={products.map((product) => product.name)} />
-          <FooterColumn title="Resources" links={["Product resources", "Catalogue", "Distributor support", "Service"]} />
+          <FooterColumn title="Resources" links={["Product resources", "Catalogue", "Support", "Service"]} />
           <FooterColumn title="Company" links={["Technology", "About", "Contact", "Partnerships"]} />
 
           <div className="footer-contact">

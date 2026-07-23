@@ -19,10 +19,10 @@ export type ProductKey = "activator" | "motor" | "locator" | "ultrasonic";
 export const brand = {
   name: "dp",
   shortName: "dp",
-  descriptor: "Advanced Endodontic Equipment",
+  descriptor: "Dental Tools Made Simple",
   email: "contact@dp-dental.example",
   phone: "+00 000 000 000",
-  address: "European product and clinical support office",
+  address: "Product and clinic support office",
 };
 
 export const products = [
@@ -33,31 +33,31 @@ export const products = [
     name: "A1 Pro Endo Activator",
     shortName: "dp A1 Pro",
     description:
-      "A lightweight activation handpiece made for stable access, simple mode selection, and controlled irrigant movement throughout endodontic treatment.",
-    overview: "Balanced irrigant activation for controlled chairside handling.",
+      "A light handpiece that helps dentists activate cleaning liquid during root canal treatment. It is simple to hold, simple to set, and easy to keep organized.",
+    overview: "A simple handpiece for root canal irrigation support.",
     features: [
-      "Slim grip for comfortable intraoral positioning",
-      "Selectable modes for common activation protocols",
-      "Removable tips with smooth cleanable surfaces",
+      "Slim grip that feels comfortable in the hand",
+      "Simple modes for common treatment routines",
+      "Removable tips with smooth surfaces for cleaning",
     ],
-    specs: ["Activation modes", "Handpiece weight", "Tip selection"],
+    specs: ["Simple modes", "Light handpiece", "Tip options"],
   },
 ];
 
 export const principles = [
   {
-    title: "Precision",
-    text: "Clear visual feedback and balanced handpieces help clinicians work with greater focus.",
+    title: "Easy to see",
+    text: "Clear feedback helps the dental team check settings quickly.",
     icon: LocateFixed,
   },
   {
-    title: "Control",
-    text: "Device settings and accessory handling are arranged around the real treatment sequence.",
+    title: "Easy to control",
+    text: "The grip and settings are arranged around the way the device is used.",
     icon: CircleGauge,
   },
   {
-    title: "Reliability",
-    text: "Durable surfaces, tidy connections, and service resources support everyday practice use.",
+    title: "Easy to maintain",
+    text: "Smooth surfaces and tidy accessories help with everyday clinic use.",
     icon: ShieldCheck,
   },
 ];
@@ -67,7 +67,7 @@ export const workflow = [
     step: "01",
     title: "Select",
     product: "A1 Pro Endo Activator",
-    text: "Choose the activation mode that fits the selected irrigation protocol.",
+    text: "Choose the mode you want to use.",
     icon: Settings2,
     key: "activator" as ProductKey,
   },
@@ -75,7 +75,7 @@ export const workflow = [
     step: "02",
     title: "Position",
     product: "A1 Pro Endo Activator",
-    text: "Use the slim handpiece profile to keep access stable and comfortable.",
+    text: "Place the slim handpiece where it feels stable.",
     icon: LocateFixed,
     key: "activator" as ProductKey,
   },
@@ -83,24 +83,24 @@ export const workflow = [
     step: "03",
     title: "Activate",
     product: "A1 Pro Endo Activator",
-    text: "Apply controlled movement to support consistent irrigant activation.",
+    text: "Activate the cleaning liquid during treatment.",
     icon: Activity,
     key: "activator" as ProductKey,
   },
 ];
 
 export const benefits = [
-  { title: "Comfortable handpiece control", icon: Hand },
-  { title: "Readable clinical interfaces", icon: Sparkles },
-  { title: "Organized treatment sequence", icon: RotateCw },
-  { title: "Refined material finishes", icon: Layers3 },
-  { title: "Responsive product support", icon: Headphones },
-  { title: "Clean operatory integration", icon: Boxes },
+  { title: "Comfortable to hold", icon: Hand },
+  { title: "Controls are easy to read", icon: Sparkles },
+  { title: "Simple treatment routine", icon: RotateCw },
+  { title: "Smooth, cleanable surfaces", icon: Layers3 },
+  { title: "Helpful product support", icon: Headphones },
+  { title: "Easy to organize in the clinic", icon: Boxes },
 ];
 
 export const trustItems = [
-  { value: "Ready", label: "Regulatory documentation support", icon: BadgeCheck },
-  { value: "Focused", label: "Workflow-led product design", icon: CircleGauge },
-  { value: "Regional", label: "Distributor support network", icon: RadioTower },
-  { value: "Service", label: "Product training and maintenance", icon: Boxes },
+  { value: "Docs", label: "Product documents and use notes", icon: BadgeCheck },
+  { value: "Simple", label: "Design focused on daily use", icon: CircleGauge },
+  { value: "Local", label: "Distributor support when available", icon: RadioTower },
+  { value: "Service", label: "Training and maintenance help", icon: Boxes },
 ];
